@@ -193,7 +193,7 @@ commitment.commitment = "confirmed"  # or "processed" or "finalized"
 
 Due to the complexities of using `nano` to edit files in the CLI, I used Virtual Studio Code to create and edit my `node-config.toml`
 
-Link to video will be here-
+Link to video will be [here](https://x.com/ZennnRetired/status/1981358797252702640)
 
 ## DEPLOY YOUR NODE
 
