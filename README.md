@@ -299,9 +299,12 @@ arcium init-cluster \
   --rpc-url https://api.devnet.solana.com
 ```
 
+<pre>
 Parameters:
 --offset: Unique identifier for your cluster (different from your node offset)
 --max-nodes: Maximum number of nodes in the cluster
+</pre>
+
 Example:
 
 ```
@@ -324,11 +327,13 @@ arcium join-cluster true \
   --rpc-url https://api.devnet.solana.com
 ```
 
+<pre>
 Parameters:
+
 true: Accept the join request (use false to reject)
 --rpc-url your rpc url
 --cluster-offset: The cluster’s offset you’re joining (already set to actual value 80778)
-
+</pre>
 
 
 
