@@ -317,6 +317,9 @@ arcium init-cluster \
 ​
 Option B: Join an Existing Cluster (MY CLUSTER)
 
+Send me a message on [Twitter (X)](x.com/ZennnRetired) or comment your node offset to join my cluster, 
+I'll send you an invite asap
+
 To join an existing cluster, you need to be invited by the cluster authority. Once invited, accept the invitation:
 
 ```
@@ -336,12 +339,29 @@ true: Accept the join request (use false to reject)
 </pre>
 
 
+# SENDING OUT CLUSTER INVITES TO NODES
 
+To send out invites to other nodes to join your cluster,
 
+you need to run:
 
+```
+arcium propose-join-cluster \
+  --cluster-offset <YOUR_CLUSTER_OFFSET> \
+  --node-offset <NODE_OFFSET_TO_INVITE> \
+  --keypair-path <YOUR_CLUSTER_AUTHORITY_KEYPAIR> \
+  --rpc-url https://api.devnet.solana.com
+```
 
+ After you propose, the node operator can accept by running:
 
-
+```
+arcium join-cluster true \
+  --keypair-path <THEIR_NODE_KEYPAIR> \
+  --node-offset <THEIR_NODE_OFFSET> \
+  --cluster-offset <YOUR_CLUSTER_OFFSET> \
+  --rpc-url https://api.devnet.solana.com/
+```
 
 
 
